@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="icon" href="images/3333.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- start header -->
+<nav class="p-4 bg-primary-color">
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+            <a class="" href="index.html">
+            <img src="images/logo2x.png" class="w-25"  alt="website logo" >
+            <p class="text-white fw-bold ms-2 d-inline-block">Weather</p>
+            </a>
+        <ul class="d-flex justify-content-between align-items-center">
+            <li class="px-2"><a class="link active">Home</a></li>
+            <li class="px-2"><a class="link">News</a></li>
+            <li class="px-2"><a class="link">Live cameras</a></li>
+            <li class="px-2"><a class="link">photos</a></li>
+            <li class="px-2"><a class="link">contact</a></li>
+        </ul>
+        </div>
+    </div>
+</nav>
+    <!-- end header -->
+
+    
+    <div class="weather">
+        <div class="container">
+            <input id="search" type="search" class="rounded-5 bg-primary-color" placeholder="find your location...">
+           
+                   
+                </div>
+                <div class="container">
+                    <div class="row g-0">
+                        <!-- today weather -->
+                      <div class="col-md-4 item bg-second-color">
+                        <div class="item-header bg-color-light text-color py-2 px-3 d-flex justify-content-between m-0" id="todayDate">
+                            <p class="my-auto" id="todayDateName">wednesday</p>
+                            <span>
+                                <span class="my-auto" id="todayDateNumber">18</span>
+                                <span class="my-auto" id="todayDateMonth">augst</span>
+                            </span>
+                        </div>
+                        <div class="item-content px-3 py-4 text-color" id="today">
+                            <p class="fs-4" id="todayLocation">Cairo</p>
+                            <div class="temp">
+                                <span>
+                                    <span class="fw-bold text-white" id="todayTemp">20</span>
+                                    <span class="text-white"><sup>o</sup>C</span>
+                                </span>
+                            </div>
+                            <img src="images/116.png" class="ms-3" id="todayConditionImg" alt="">
+                            <div class="mb-4">
+                                <p class="text-blue my-3" id="todayConditionText">sunny</p>
+                            </div>
+                            <div class="item-footer d-flex justify-content-between">
+                                <div class="d-flex align-items-start">
+                                    <img src="images/icon-umberella.png" alt="" class="me-2">
+                                    <p id="humidity">20%</p>
+                                </div>
+                                <div class="d-flex align-items-start">  
+                                    <img src="images/icon-wind.png" alt="" class="me-2">
+                                    <p id="wind">18km/h</p>
+                                </div>
+                                <div class="d-flex align-items-start">
+                                    <img src="images/icon-compass.png" alt="" class="me-2">
+                                    <p id="windDirection">east</p>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <!-- tomorrow weather -->
+                      <div class="col-md-4 item bg-color m-0 text-center">
+                        <div class="item-header bg-color-header text-color py-2 px-3 m-0" id="tomorrowDate">
+                            <p class="my-auto nextDayName">saterday</p>
+                        </div>
+                        <div class="item-content px-3 py-5" id="tomorrow">
+                            <img src="images/113.png"  alt="" class="my-3 nextConditionImg">
+                            <div class="text-white fs-1">
+                                <span class="nextMaxTemp">30</span>
+                                <span><sup>o</sup>c</span>
+                            </div>
+                            <div class="text-color">
+                                <span class="nextMinTemp">28</span>
+                                <span><sup>o</sup></span>
+                            </div>
+                            <p class="text-blue mt-3 nextConditionText">sunny</p>
+                        </div>
+                      </div>
+                      <!-- after tomorrow weather -->
+                      <div class="col-md-4 item bg-second-color m-0 text-center">
+                        <div class="item-header bg-color-light text-color py-2 px-3 m-0">
+                            <p class="my-auto nextDayName">friday</p>
+                        </div>
+                        <div class="item-content px-3 py-5">
+                            <img src="images/113.png" alt="" class="my-3 nextConditionImg">
+                            <div class="text-white fs-1">
+                                <span  class="nextMaxTemp">30</span>
+                                <span><sup>o</sup>c</span>
+                            </div>
+                            <div class="text-color">
+                                <span class="nextMinTemp">28</span>
+                                <span><sup>o</sup></span>
+                            </div>
+                            <p class="text-blue mt-3 nextConditionText">sunny</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+    </div>
+
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script> 
+</body>
+</html>

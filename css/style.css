@@ -1,0 +1,71 @@
+.bg-primary-color{
+    background-color: #1E202B;
+}
+.bg-second-color{
+    background-color: #323544;
+} 
+.bg-color{
+    background-color: #262936;
+}
+.bg-color-header{
+    background-color: #222531;
+}
+.bg-color-light{
+    background-color: #2D303D;
+}
+.text-color{
+    color: #BFC1BF;
+}
+.text-blue{
+    color: #009AD8;
+}
+.link{
+    padding: .1rem 2rem;
+    border: 2px solid transparent;
+    color: #fff;
+    border-radius: 1rem;
+    transition: all .2s ease-in-out;
+}
+.link:hover, .active{
+    border: 2px solid #009AD8;
+    color: #009AD8;
+}
+
+body{
+    font-family: "Roboto" , "Open Sans", sans-serif;
+    background-color: #1E202B;
+}
+a , span{
+    display: inline-block;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+li{
+    text-decoration: none;
+}
+.weather{
+    background-image: url(../images/banner.png);
+    background-size: cover;
+    max-height: 400px;
+    padding: 70px 0;
+}
+#search{
+    width: 100%;
+    padding: 1rem;
+    border: none ;
+    outline: none;
+    color: #fff;
+    margin-bottom: 7rem;
+}
+.temp{
+    font-size: 5.5rem;
+}
+
+
+@media screen and (max-width: 992px){
+    nav ul li{
+        display: none;
+    }
+}
